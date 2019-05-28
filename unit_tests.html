@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Testing Jasmine</title>
+  <!-- ensure that all the Jasmine files come before all the Angular files... -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.4.1/jasmine.css"></link>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.4.1/jasmine.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.4.1/jasmine-html.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.4.1/boot.js"></script>
+  <script src="MVC.js"></script>
+  
+  <script>
+     
+      //  function is in the MVC.js file
+     /*  describe('add function located in MVC.js', function(){
+        
+        var adder = new addingMVC();
+        
+        it('adds a + b', function(){
+          expect(adder.addingMVC(1,2)).toBe(3);
+        })
+      });
+ */
+      
+      // test that conroller calls model.
+
+      // test API call
+
+      // test scheduler comparisons
+
+      // test view alert
+
+      /*
+      describe()
+      it()
+      xit() : pending
+      fit()
+      beforeEach()
+      expect() :
+        .toHaveBeenCalledWith();
+      */
+     describe('hello()', function(){
+       
+        it('calls food() function', function(){
+          
+          var uu = new hello();
+          spyOn(validate);
+          
+          expect(validate).toHaveBeenCalled();
+        });
+     });
+
+  </script>
+
+</head>
+<body>
+
+</body>
+</html>

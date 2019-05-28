@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Currency Exchange</title>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+	<link 
+	href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Cormorant+Garamond:300,300i, 400,400i, 500, 500i, 600, 600i, 700, 700i" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="header-brand">Currency Exchange</a>
+		<nav>
+			<ul>
+				<li><a href="#">Purchase</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<a href="#" class="header-cases">Support</a>
+		</nav>
+	</header>
+	<main>
+		<section class="index-banner">
+			<div class="vertical-center">
+			<h2>Currency<br> Tracking System</h2>
+			<h1>Select a Currency Pair and Target Rate</h1>
+			</div>
+		</section>
+
+		<div class="wrapper">
+			<section class="index-links">
+				<table>
+					<tr>
+						<!-- <td>
+							<p>Prices: <span id="newPrice"></span></p>
+						</td> -->
+						<td>
+							<td><button onclick="Controller()">Submit</button></td>
+						</td>
+						<td><input id="target.price" type="text" value=""></td>
+						<td>
+							<select id="currency.pair">
+							<option value="EURUSD">EURUSD</option>
+							<option value="USDJPY">USDJPY</option>
+							<option value="GPBUSD">GPBUSD</option>
+							<option value="USDCHF">USDCHF</option>
+							<option value="EURCHF">EURCHF</option>
+							<option value="AUDUSD">AUDUSD</option>
+							<option value="USDCAD">USDCAD</option>
+							<option value="NZDUSD">NZDUSD</option>  
+							<option value="EURGBP">EURGBP</option>
+							</select>
+						</td>
+						<td>
+							<select id="user.frequency">
+								<option value="20">20 SECONDS</option>
+								<option value="30">30 SECONDS</option>
+								<option value="40">40 SECONDS</option>
+								<option value="60">1 MINUTES</option>
+							</select>
+						</td>
+						
+					</tr>
+					
+				</table>
+				<script src="MVC.js"></script>
+				<!-- <script>
+				const xhr = new HMLHttpRequest();
+               xhr.onreadystatechange = function(){
+                    if (xhr.readyState ==4) {
+                         if (xhr.status == 200) {
+                              document.getElementById('newPrice').textContent = ask;
+                         }
+                         else if(xhr.status == 404){
+                              document.getElementById('newPrice').textContent = "0";
+
+                         }
+                    }
+               };
+               xmlhttp.open("GET", "index.html", true);
+               xmlhttp.send();
+				</script> -->
+
+			</section>
+		</div>
+	</main>
+	<div class="wrapper">
+		<footer>
+               
+			<ul class="footer-links-main">
+                    
+				<li><a href="#">Currency</a></li>
+				<li><a href="#">Exchange Rates</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Markets</a></li>
+                    <li><a href="#">Contact</a></li>
+               
+			</ul>
+
+			<div class="footer-sm">
+
+               </div>
+          
+		</footer>
+	</div>
+</body>
+</html>
